@@ -7,8 +7,6 @@
     ini_set("allow_url_fopen", 1);
     $json1 = json_decode(file_get_contents($url1), true);
     $json2 = json_decode(file_get_contents($url2), true);
-    $json1 = [['id'=>1],['id'=>2],['id'=>3],];
-    $json2 = [['id'=>1],['id'=>2],];
 
     $array1 = [];
     foreach ($json1 as $key => $value) {
